@@ -1,12 +1,17 @@
 # this is the lab_06 file
 def encode(string):
-
     encoded_password = ""
-
     for i in range(0, len(string)):
         encoded_password += str(int(string[i]) + 3)
 
     return encoded_password
+
+def decode(password):
+    decoded_password = ""
+    for digit in password:
+        decoded_digit = str(int(digit) - 3)
+        decoded_password += decoded_digit
+    return decoded_password
 
 
 def main():
@@ -16,7 +21,7 @@ def main():
     while continue_:
 
         print("\nMenu")
-        print("----")
+        print("-------------")
         print("1. Encode")
         print("2. Decode")
         print("3. Quit\n")
