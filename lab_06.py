@@ -1,4 +1,4 @@
-
+# this is the lab_06 file
 def encode(string):
 
     encoded_password = ""
